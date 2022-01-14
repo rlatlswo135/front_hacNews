@@ -1,0 +1,18 @@
+{
+    "compilerOptions": { //이게 중요한 옵션
+        "strict": true, //strict 엄격 즉 ts의 기능을 얼마나 엄격하게 지켜서 컴파일할꺼냐
+        "target": "ES5", //등 이런 옵션들은 TypeScript공식문서에서 찾아서 봐보자
+        "module": "CommonJS",
+        "alwaysStrict": true,
+        "noImplicitAny" : true,
+        "noImplicitThis": true,
+        "sourceMap": true,
+        "downlevelIteration": true,
+        "lib":[
+            "es6",
+            "dom" //async await기능을 쓰기위해서 ts는 config에 추가를해줘야하나부다
+        ]
+    }
+}
+
+//TypeScript는 트랜스파일러기때문에 브라우저에서 실행시키려면 JavaScript로 변환을해야하는데 그 변환과정에서 여러옵션을 줄수있고 이 tsconfig.json에다가 그 옵션들을 넣어줄수있다.

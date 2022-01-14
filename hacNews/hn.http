@@ -1,0 +1,4 @@
+
+###
+GET url HTTP/1.1 
+//HTTP/1.1 = 프로토콜 하고 위에 send Request를 누르면 해당 ajax호출의 결과가 오른쪽에디터의 화면에 나온다
